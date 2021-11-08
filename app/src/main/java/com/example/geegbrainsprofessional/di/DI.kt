@@ -1,44 +1,18 @@
 package com.example.geegbrainsprofessional.di
 
-import com.example.geegbrainsprofessional.data.api.DictionaryApi
-import com.example.geegbrainsprofessional.data.datasource.DictionaryDataSource
-import com.example.geegbrainsprofessional.data.datasource.DictionaryDataSourceImpl
-import com.example.geegbrainsprofessional.domain.repository.DictionaryRepository
-import com.example.geegbrainsprofessional.domain.repository.DictionaryRepositoryImpl
-import com.example.geegbrainsprofessional.presentation.dictionary.DictionaryListViewModel
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
+import com.example.geegbrainsprofessional.domain.repository.StopwatchRepository
+import com.example.geegbrainsprofessional.domain.repository.StopwatchRepositoryImpl
+import com.example.geegbrainsprofessional.presentation.dictionary.StopwatchViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
-import retrofit2.Retrofit
-import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
-import retrofit2.converter.gson.GsonConverterFactory
 
 object DI {
 
     fun getModule() = module {
 
-        single<DictionaryApi> {
-            Retrofit.Builder()
-                .baseUrl("https://dictionary.skyeng.ru/")
-                .client(
-                    OkHttpClient.Builder()
-                        .addInterceptor(HttpLoggingInterceptor().apply {
-                            level = HttpLoggingInterceptor.Level.BODY
-                        })
-                        .build()
-                )
-                .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-                .create(DictionaryApi::class.java)
-        }
+        single<StopwatchRepository> { StopwatchRepositoryImpl() }
 
-        single<DictionaryDataSource> { DictionaryDataSourceImpl(dictionaryApi = get()) }
-
-        single<DictionaryRepository> { DictionaryRepositoryImpl(dictionaryDataSource = get()) }
-
-        viewModel { DictionaryListViewModel(dictionaryRepository = get()) }
+        viewModel { StopwatchViewModel(stopwatchRepository = get()) }
 
     }
 
