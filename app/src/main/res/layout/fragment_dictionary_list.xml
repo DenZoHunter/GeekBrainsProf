@@ -9,9 +9,9 @@
     <Button
         android:id="@+id/navToHistory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/history"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/to_history"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/dictionaryList"
