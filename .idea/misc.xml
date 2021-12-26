@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ASProject/GBProf/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2703125" />
-        <entry key="..\:/ASProject/GBProf/app/src/main/res/layout/activity_main.xml" value="0.20199275362318841" />
-        <entry key="..\:/ASProject/GBProf/app/src/main/res/layout/fragment_dictionary_list.xml" value="0.19610507246376813" />
-        <entry key="..\:/ASProject/GBProf/app/src/main/res/layout/fragment_stopwatch.xml" value="0.19021739130434784" />
-        <entry key="..\:/ASProject/GBProf/app/src/main/res/layout/item_list.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/StudioProjects/GBApp6/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.325" />
+        <entry key="..\:/Users/Admin/StudioProjects/GBApp6/app/src/main/res/layout/activity_main.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Admin/StudioProjects/GBApp6/app/src/main/res/layout/fragment_dictionary_list.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/StudioProjects/GBApp6/app/src/main/res/layout/fragment_history_details.xml" value="0.12037037037037036" />
+        <entry key="..\:/Users/Admin/StudioProjects/GBApp6/app/src/main/res/layout/fragment_history_list.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/StudioProjects/GBApp6/app/src/main/res/layout/item_list.xml" value="0.1" />
       </map>
     </option>
   </component>
