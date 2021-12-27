@@ -1,12 +1,9 @@
 <resources>
-    <string name="app_name">Application architecture geekbrains</string>
-    <string name="counter_one">Счетчик 1</string>
-    <string name="counter_two">Счетчик 2</string>
-    <string name="counter_three">Счетчик 3</string>
-    <string name="error">Error</string>
-    <string name="undefinedLogin">Undefined Login</string>
-    <string name="convert">Convert</string>
-    <string name="success">Success</string>
-    <string name="noImageSelected">No image selected</string>
-    <string name="countForks">Count Forks %d</string>
+    <string name="app_name">GBApp6</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dictionary_list">DictionaryList</string>
+    <string name="search">search</string>
+    <string name="to_history">To history</string>
+    <string name="image">image</string>
 </resources>
